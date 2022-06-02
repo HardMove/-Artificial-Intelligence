@@ -1,0 +1,60 @@
+@import "_null";
+
+.inner {
+   max-width: 1350px;
+   margin: 0 auto;
+   padding: 0px 15px;
+}
+
+.header {
+   background: #050d1b;
+   padding: 22px 0px;
+
+   .inner {
+      display: flex;
+      align-items: center;
+   }
+
+   &__logo {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-right: 100px;
+   }
+
+   a {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-size: 22.5455px;
+      line-height: 31px;
+      color: #3a68b8;
+   }
+   nav {
+      margin-right: auto;
+
+      ul {
+         display: flex;
+         font-family: "Open Sans";
+         font-weight: 600;
+         font-size: 16px;
+         line-height: 22px;
+         color: #ffffff;
+         gap: 40px;
+      }
+   }
+
+   button {
+      width: 112px;
+      height: 52px;
+      left: 1421px;
+      top: 24px;
+      background: #3a68b8;
+      border-radius: 5px;
+
+      font-family: "Open Sans";
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+      color: #ffffff;
+   }
+}
