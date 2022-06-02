@@ -20,26 +20,28 @@
       align-items: center;
       gap: 15px;
       margin-right: 100px;
+
+      &-text {
+         font-family: "Open Sans";
+         font-style: normal;
+         font-size: 22.5455px;
+         line-height: 31px;
+         color: #3a68b8;
+      }
    }
 
-   a {
-      font-family: "Open Sans";
-      font-style: normal;
-      font-size: 22.5455px;
-      line-height: 31px;
-      color: #3a68b8;
-   }
    nav {
       margin-right: auto;
-
       ul {
          display: flex;
-         font-family: "Open Sans";
-         font-weight: 600;
-         font-size: 16px;
-         line-height: 22px;
-         color: #ffffff;
          gap: 40px;
+         a {
+            font-family: "Open Sans";
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+            color: #ffffff;
+         }
       }
    }
 
