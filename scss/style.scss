@@ -9,6 +9,10 @@ img {
    max-width: 100%;
 }
 
+a {
+   display: inline-block;
+}
+
 .inner {
    max-width: 1350px;
    margin: 0 auto;
@@ -71,10 +75,12 @@ img {
 
 .intro {
    margin-bottom: 90px;
+
    .inner {
       display: flex;
       gap: 80px;
    }
+
    &__info {
       margin-top: 160px;
       span {
@@ -120,8 +126,6 @@ img {
             font-size: 20px;
             line-height: 27px;
             color: #ffffff;
-            text-align: center;
-
             display: flex;
 
             img {
@@ -138,9 +142,52 @@ img {
 }
 
 .logos {
-   margin-bottom: 230px;
    &__raw {
       display: flex;
       justify-content: space-between;
+   }
+}
+
+.learn-more {
+   .inner {
+      display: flex;
+      gap: 80px;
+   }
+
+   &__img {
+      margin-top: 200px;
+   }
+
+   &__info {
+      margin-top: 340px;
+      h2 {
+         font-family: "Open Sans";
+         font-weight: 700;
+         font-size: 40px;
+         line-height: 130%;
+         color: #ffffff;
+
+         margin-bottom: 30px;
+      }
+
+      p {
+         font-family: "Open Sans";
+         font-weight: 600;
+         font-size: 16px;
+         line-height: 160%;
+         color: #ffffff;
+         opacity: 0.7;
+         margin-bottom: 50px;
+      }
+
+      a {
+         background: #3a68b8;
+         border-radius: 5px;
+         padding: 15px 30px;
+         font-family: "Open Sans";
+         font-weight: 600;
+         font-size: 16px;
+         color: #ffffff;
+      }
    }
 }
