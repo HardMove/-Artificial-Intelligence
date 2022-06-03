@@ -70,6 +70,7 @@ img {
 }
 
 .intro {
+   margin-bottom: 90px;
    .inner {
       display: flex;
       gap: 80px;
@@ -105,26 +106,41 @@ img {
          margin-bottom: 50px;
          max-width: 560px;
       }
-   }
 
-   &__info-buttons {
-      display: flex;
-      gap: 20px;
+      &-buttons {
+         display: flex;
+         gap: 20px;
 
-      a {
-         padding: 15px 30px;
-         background: #3a68b8;
-         border-radius: 5px;
-         font-family: "Open Sans";
-         font-weight: 600;
-         font-size: 20px;
-         line-height: 27px;
-         color: #ffffff;
-         text-align: center;
+         a {
+            padding: 15px 30px;
+            background: #3a68b8;
+            border-radius: 5px;
+            font-family: "Open Sans";
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 27px;
+            color: #ffffff;
+            text-align: center;
+
+            display: flex;
+
+            img {
+               margin-right: 10px;
+               margin-left: 5px;
+            }
+         }
       }
    }
 
-   img {
+   &__main-img {
       margin-top: 40px;
+   }
+}
+
+.logos {
+   margin-bottom: 230px;
+   &__raw {
+      display: flex;
+      justify-content: space-between;
    }
 }

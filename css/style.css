@@ -177,6 +177,10 @@ img {
   color: #ffffff;
 }
 
+.intro {
+  margin-bottom: 90px;
+}
+
 .intro .inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -235,8 +239,29 @@ img {
   line-height: 27px;
   color: #ffffff;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.intro img {
+.intro__info-buttons a img {
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+.intro__main-img {
   margin-top: 40px;
+}
+
+.logos {
+  margin-bottom: 230px;
+}
+
+.logos__raw {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
