@@ -13,6 +13,23 @@ a {
    display: inline-block;
 }
 
+h2 {
+   font-family: "Open Sans";
+   font-weight: 700;
+   font-size: 40px;
+   line-height: 130%;
+   color: #ffffff;
+}
+
+p {
+   font-family: "Open Sans";
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 160%;
+   color: #ffffff;
+   opacity: 0.7;
+}
+
 .inner {
    max-width: 1350px;
    margin: 0 auto;
@@ -161,22 +178,10 @@ a {
    &__info {
       margin-top: 340px;
       h2 {
-         font-family: "Open Sans";
-         font-weight: 700;
-         font-size: 40px;
-         line-height: 130%;
-         color: #ffffff;
-
          margin-bottom: 30px;
       }
 
       p {
-         font-family: "Open Sans";
-         font-weight: 600;
-         font-size: 16px;
-         line-height: 160%;
-         color: #ffffff;
-         opacity: 0.7;
          margin-bottom: 50px;
       }
 
@@ -189,5 +194,25 @@ a {
          font-size: 16px;
          color: #ffffff;
       }
+   }
+}
+
+.about {
+   .inner {
+      display: flex;
+      gap: 80px;
+   }
+   &__info {
+      margin-top: 215px;
+      h2 {
+         margin-bottom: 40px;
+      }
+      p {
+         margin-bottom: 20px;
+      }
+   }
+
+   &__img {
+      margin-top: 170px;
    }
 }
