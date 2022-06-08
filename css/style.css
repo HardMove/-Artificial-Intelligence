@@ -105,6 +105,12 @@ img {
   max-width: 100%;
 }
 
+.inner {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0px 25px;
+}
+
 h2 {
   font-family: "Open Sans";
   font-weight: 700;
@@ -115,17 +121,11 @@ h2 {
 
 p {
   font-family: "Open Sans";
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
   line-height: 160%;
   color: #ffffff;
   opacity: 0.7;
-}
-
-.inner {
-  max-width: 1350px;
-  margin: 0 auto;
-  padding: 0px 15px;
 }
 
 .header {
@@ -159,6 +159,16 @@ p {
   font-size: 22.5455px;
   line-height: 31px;
   color: #3a68b8;
+  -webkit-transition: 0.7s;
+  -o-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.header__logo-text:hover {
+  color: #e2e0e0;
+  -webkit-transition: 0.7s;
+  -o-transition: 0.7s;
+  transition: 0.7s;
 }
 
 .header nav {
@@ -175,16 +185,24 @@ p {
 .header nav ul a {
   font-family: "Open Sans";
   font-weight: 600;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 22px;
   color: #ffffff;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.header nav ul a:hover {
+  color: #3a68b8;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .header button {
   width: 112px;
   height: 52px;
-  left: 1421px;
-  top: 24px;
   background: #3a68b8;
   border-radius: 5px;
   font-family: "Open Sans";
@@ -192,6 +210,16 @@ p {
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.header button:hover {
+  background: #184da8;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .intro {
@@ -202,7 +230,10 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 80px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 30px;
 }
 
 .intro__info {
@@ -225,16 +256,11 @@ p {
   font-size: 55px;
   line-height: 130%;
   color: #ffffff;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .intro__info p {
-  font-family: "Open Sans";
-  font-weight: 600px;
   font-size: 18px;
-  line-height: 160%;
-  color: #ffffff;
-  opacity: 0.7;
   margin-bottom: 50px;
   max-width: 560px;
 }
@@ -243,6 +269,8 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
   gap: 20px;
 }
 
@@ -258,11 +286,21 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .intro__info-buttons a img {
   margin-right: 10px;
   margin-left: 5px;
+}
+
+.intro__info-buttons a:hover {
+  background: #184da8;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .intro__main-img {
@@ -273,9 +311,15 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 50px;
+}
+
+.logos__item {
+  width: 18rem;
 }
 
 .learn-more .inner {
@@ -310,6 +354,20 @@ p {
   font-size: 16px;
   color: #ffffff;
   display: inline-block;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.learn-more__info a:hover {
+  background: #184da8;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.about {
+  margin-bottom: 40px;
 }
 
 .about .inner {
@@ -352,18 +410,27 @@ p {
 
 .footer a {
   font-family: "Open Sans";
-  font-weight: 400;
   font-size: 14px;
-  color: #ffffff;
   opacity: 0.6;
   display: block;
+  color: #ffffff;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.footer a:hover {
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .footer p {
   font-family: "Open Sans";
   font-weight: 400;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 20px;
   color: #ffffff;
   opacity: 0.6;
 }
@@ -431,13 +498,6 @@ p {
   margin-right: 5px;
 }
 
-.footer__columns {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 300px;
-}
-
 .footer__information, .footer__footer-menu, .footer__useful-links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -446,9 +506,7 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  gap: 24.5px;
 }
 
 .footer__about-the-store {
@@ -477,13 +535,14 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 25px;
   opacity: 0.6;
+  margin-bottom: 4rem;
 }
 
 .footer__about-the-store__language {
-  position: absolute;
-  bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -498,4 +557,96 @@ p {
   font-weight: 400;
   font-size: 14px;
   color: #ffffff;
+}
+
+@media screen and (max-width: 1165px) {
+  .intro {
+    margin-bottom: 140px;
+  }
+  .intro .inner {
+    gap: 10px;
+  }
+  .intro__info {
+    margin-top: 90px;
+  }
+  .intro__info h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+  .intro__info p {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+  .intro__main-img {
+    max-width: 50%;
+    margin-top: 0;
+  }
+  .header button {
+    margin-left: auto;
+  }
+  .header nav ul {
+    gap: 25px;
+  }
+  .header__logo {
+    margin-right: 35px;
+  }
+  .learn-more__img,
+  .about__img {
+    max-width: 40%;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .header nav {
+    display: none;
+  }
+  .intro__main-img {
+    display: none;
+  }
+  .intro__info h1 {
+    font-weight: 700;
+  }
+  .learn-more__img {
+    display: none;
+  }
+  .learn-more__info {
+    margin-top: 115px;
+  }
+  .learn-more__info p {
+    margin-bottom: 25px;
+  }
+  .learn-more__info h2 {
+    margin-bottom: 15px;
+    font-size: 35px;
+    font-weight: 600;
+  }
+  .about__img {
+    display: none;
+  }
+  .about__info {
+    margin-top: 80px;
+  }
+  .about__info h2 {
+    margin-bottom: 15px;
+    font-size: 35px;
+    font-weight: 600;
+  }
+  .footer .inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 15px;
+  }
+  .footer h3 {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .intro__info {
+    margin-top: 20px;
+  }
+  .intro__info-buttons a {
+    font-size: 18px;
+    padding: 13px 30px;
+  }
 }
